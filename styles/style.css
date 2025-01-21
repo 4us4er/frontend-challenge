@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+  max-width: 100%;
+}
+body {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  font-family: "Roboto Regular", sans-serif;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+li,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.page-header {
+  width: 100%;
+  color: black;
+  background-color: rgb(33, 150, 243, 1);
+}
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.navigation {
+  max-width: 1440px;
+}
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 285px;
+  align-items: center;
+  width: 339px;
+}
+.navigation-link {
+  display: block;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 23px;
+}
+.navigation-link:hover,
+.navigation-link:active,
+.navigation-link:focus {
+  background-color: rgb(30, 136, 229, 1);
+}
+.navigation-item:first-child {
+  background-color: rgb(30, 136, 229, 1);
+}
+.pictures {
+  margin-bottom: 48px;
+}
+.photo-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo-item {
+  position: relative;
+  overflow: hidden;
+}
+.photo-item img {
+  margin-right: 48px;
+  margin-top: 48px;
+}
+.photo-item:nth-child(5n) {
+  margin-right: 0;
+}
+.photo-item img:hover {
+  transform: scale(1.1422);
+
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+}
+.photo-item::after {
+  content: "";
+  position: absolute;
+  height: 37px;
+  width: 40px;
+  bottom: 24px;
+  left: 194px;
+
+  background-image: url("../images/likes.svg");
+  background-size: cover;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s;
+}
+
+.photo-item:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.upload-button {
+  border: none;
+  cursor: pointer;
+  margin: auto;
+
+  line-height: 21px;
+  font-family: inherit;
+  background: none;
+  padding: 0;
+
+  width: 195px;
+
+  color: #402727;
+}

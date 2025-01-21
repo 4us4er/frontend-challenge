@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Управление автозаполнением полей</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header data-test="header" class="page-header">
+      <div class="container">
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">Все котики </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">Любимые котики</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="pictures container">
+        <ul class="photo-list"></ul>
+      </section>
+      <div class="container">
+        <button class="upload-button">...загружаем еще котиков...</button>
+      </div>
+    </main>
+
+    <!-- Шаблон изображения случайного пользователя -->
+    <template id="photos">
+      <li class="photo-item">
+        <img class="photo-img" src="" alt="" width="225" height="225" />
+      </li>
+    </template>
+  </body>
+</html>
